@@ -1,0 +1,126 @@
+/* Définition des polices personnalisées*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/raleway/Raleway-Black.ttf');
+}
+
+/* Eléments principaux de la page*/
+
+body
+{
+    font-family:Raleway,Arial, Helvetica, sans-serif;
+    width: 900px;
+    margin: auto;
+}
+
+/* Header */
+
+#logo
+{
+    width: 65px;
+    height: 60px;
+}
+
+#contener
+{
+    display: flex;
+    justify-content: space-between;    
+}
+
+/* Navigaton */
+
+nav ul
+{
+    list-style-type:none;
+    display:flex;  
+}
+ nav li
+ {
+    margin-right: 15px;
+ }
+
+ /* Section recherche */
+
+ #rechercher
+ {
+    display: flex;
+
+ }
+
+ #filtres
+ {
+    display: flex;
+    
+ }
+
+ /* section hébergement*/
+
+#hebergement
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+   
+}
+
+article
+{
+    border: 3px #f2f2f2 solid;
+    background-color: #f2f2f2;
+}
+
+#populaire
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#hotel_le_soleil
+{
+    display: flex;
+}
+
+#Au_coeur_de_leau
+{
+    display: flex;
+}
+
+#Hotel_tout_bleu
+{
+    display: flex;
+}
+
+
+/* Activitées */
+
+#activités
+{
+    display: flex;
+}
+
+#colonne1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#colonne2
+{
+    display: flex;
+    flex-direction: column; 
+}
+ /* Footer */
+
+ footer
+ {
+    display:flex;
+    justify-content: space-between;
+    background-color: #DEEBFF;
+ }
+
+ ul
+ {
+     list-style-type: none;
+ }
