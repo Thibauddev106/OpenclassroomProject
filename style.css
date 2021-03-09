@@ -14,15 +14,37 @@ body
     margin: auto;
 }
 
+h2
+{
+    font-size: 17px;  
+}
+
+h3
+{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+h4
+{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+p
+{
+    font-size: 10px;
+}
+
 /* Header */
 
 #logo
 {
     width: 65px;
-    height: 60px;
 }
 
-#contener
+header
 {
     display: flex;
     justify-content: space-between;    
@@ -35,63 +57,191 @@ nav ul
     list-style-type:none;
     display:flex;  
 }
- nav li
- {
+
+nav li
+{
     margin-right: 15px;
- }
+}
+
+.non_souligné
+{
+    font-size: 12px;
+    text-decoration : None
+}
 
  /* Section recherche */
 
- #rechercher
+ #span_recherche
  {
-    display: flex;
+    display: inline;
 
  }
-
- #filtres
+ #champ_recherche
  {
+     height: 30px;
+     border: 3px solid #f2f2f2;
+     margin-left: -5px;
+ }
+.rechercher
+{
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: -5px;
+    height: 30px;
+}
+
+#filtres
+{
     display: flex;
+    align-items: baseline;
+    margin-top: 15px;
+
+}
+
+.button
+{
+    border: solid 3px #f2f2f2;
+    border-radius: 20px;
+    background-color: white;
+    height: 30px;
     
- }
+    
+}
+
+.fa-map-marker-alt
+{
+    padding-top: 2.5px;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid #f2f2f2;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px
+ 
+}
+
+.fa-money-bill-wave-alt
+{
+    color:#0065FC;
+    margin-right: 10px;
+    border-radius: 20px;    
+}
+
+.fa-child
+{
+    color:#0065FC;
+    margin-right: 10px;
+}
+
+.fa-heart
+{
+    color:#0065FC;
+    margin-right: 10px;
+}
+
+.fa-dog
+{
+    color:#0065FC;
+    margin-right: 10px; 
+}
 
  /* section hébergement*/
 
+.titres
+{
+    margin-left: 10px;
+}
 #hebergement
 {
+    width: 600px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    
-   
+    flex-wrap: wrap;        
 }
 
-article
+.agencement
 {
-    border: 3px #f2f2f2 solid;
-    background-color: #f2f2f2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    border:3px solid white;
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
+.fa-star
+{
+    color: #0065FC;
+    font-size: 10px;
+}
+
+#article_aside
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+article
+ {
+    background-color: #f2f2f2;
+    border: solid 3px #f2f2f2;
+    border-radius: 8px;
+    margin-right: 10px;
+    
+ }
 #populaire
 {
+    width: 300px;
     display: flex;
     flex-direction: column;
 }
 
-#hotel_le_soleil
+aside
 {
-    display: flex;
+    background-color:  #f2f2f2;
+    border-radius: 8px;
+    width: 270px;
+    margin-bottom: 40px;
+    
 }
 
-#Au_coeur_de_leau
+.agencement_aside
 {
+    background-color: white;
     display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;     
 }
 
-#Hotel_tout_bleu
+.img_aside
 {
-    display: flex;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-left: 4px;
+    margin-top: 4px;
 }
 
+.img_article
+{
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.description
+{
+    display: flex;
+    flex-direction: column;  
+}
 
 /* Activitées */
 
@@ -100,16 +250,42 @@ article
     display: flex;
 }
 
-#colonne1
+.colonne
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 20px;
 }
 
-#colonne2
+.grande_carte
 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.grande_photo
+{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.petite_photo
+{
+    width: 200px;
+    height: 125px;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
 }
  /* Footer */
 
@@ -117,7 +293,8 @@ article
  {
     display:flex;
     justify-content: space-between;
-    background-color: #DEEBFF;
+    background-color: #f2f2f2;
+    margin-top: 50px;
  }
 
  ul
