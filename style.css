@@ -9,19 +9,14 @@
 
 body
 {
-    font-family:Raleway,Arial, Helvetica, sans-serif;
+    font-family:Raleway ,Arial, Helvetica, sans-serif;
     width: 900px;
     margin: auto;
 }
 
-button:hover 
-{
-    background-color: #f2f2f2;
-}
-
 h2
 {
-    font-size: 17px;  
+    font-size: 17px;
 }
 
 h3
@@ -37,16 +32,19 @@ h4
     margin-bottom: 0;
 }
 
-p
+p 
 {
     font-size: 10px;
+    margin-top: 4px;
+    margin-bottom: 0;
 }
+
 
 /* Header */
 
 #logo
 {
-    width: 65px;
+    width: 100px;
 }
 
 header
@@ -74,7 +72,14 @@ nav li
     text-decoration : None
 }
 
- /* Section recherche */
+
+ /* Section recherche */ 
+
+ .carte1
+ {
+    border-radius: 8px;
+    border:3px solid white;
+ }
 
  #span_recherche
  {
@@ -84,8 +89,9 @@ nav li
  #champ_recherche
  {
      height: 30px;
-     border: 3px solid #f2f2f2;
+     border: 2px solid #f2f2f2;
      margin-left: -5px;
+     margin-top: 10px;
  }
 .rechercher
 {
@@ -102,56 +108,97 @@ nav li
     display: flex;
     align-items: baseline;
     margin-top: 15px;
-
+    margin-bottom: 15px;
 }
 
 .button
 {
-    border: solid 3px #f2f2f2;
+    
+    border: solid 2px #f2f2f2;
     border-radius: 20px;
     background-color: white;
     height: 30px;
-    ;
-    
-    
+    padding-left: 30px;    
+}
+
+
+ /* Filtres */
+
+.filtres
+{
+    margin-top: 15px;
+    display: flex;
+    align-items: baseline;
+}
+
+.filtres a 
+{
+    color: black;
+    text-decoration: none;
+}
+
+.filtres-boutons 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn span 
+{
+    margin-left: 10px;
+    margin: 10px
+}
+
+.btn:hover span 
+{
+    text-decoration: #0065FC;
+}
+
+.btn i 
+{
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    border: 2px solid #DEEBFF;
+    color: #0065FC;
+    margin: -2px;
+    padding: 7px; 
+}
+
+.btn 
+{
+    padding: 0;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    height: 27px;
+    margin-bottom: 9px;
+    margin-left: 9px;
+    font-size: small;
+}
+
+.btn:hover 
+{
+    background-color: #0065FC;
+    color: white;
+    border: 2px solid #DEEBFF;
 }
 
 .fa-map-marker-alt
 {
-    padding-top: 2.5px;
-    padding-bottom: 6px;
+    padding-top: 3.5px;
+    padding-bottom: 6.5px;
     padding-left: 5px;
     padding-right: 5px;
-    border: 3px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px
- 
+    border-bottom-left-radius: 8px;
+    border-right: none;
+    background-color: #f2f2f2;
 }
 
-.fa-money-bill-wave-alt
-{
-    color:#0065FC;
-    margin-right: 10px;
-    border-radius: 20px;    
-}
-
-.fa-child
-{
-    color:#0065FC;
-    margin-right: 10px;
-}
-
-.fa-heart
-{
-    color:#0065FC;
-    margin-right: 10px;
-}
-
-.fa-dog
-{
-    color:#0065FC;
-    margin-right: 10px; 
-}
 
  /* section hébergement*/
 
@@ -170,17 +217,27 @@ nav li
 {
     background-color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     margin-left: 10px;
     border:3px solid white;
     margin-bottom: 15px;
     border-radius: 8px;
+    box-shadow: 1px 1px 5px black;   
+}
+
+.carte_description
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    
 }
 
 .fa-star
 {
     color: #0065FC;
-    font-size: 10px;
+    font-size: 9px;
+    margin-bottom: 6px;
 }
 
 #article_aside
@@ -189,19 +246,28 @@ nav li
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 article
  {
+    margin-top: 10px;
     background-color: #f2f2f2;
     border: solid 3px #f2f2f2;
     border-radius: 8px;
     margin-right: 10px;
-    
  }
+
 #populaire
 {
     width: 300px;
     display: flex;
     flex-direction: column;
+}
+
+.titre_aside
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 aside
@@ -210,7 +276,9 @@ aside
     border-radius: 8px;
     width: 270px;
     margin-bottom: 40px;
-    
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .agencement_aside
@@ -220,7 +288,8 @@ aside
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 15px;
-    border-radius: 8px;     
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px black;    
 }
 
 .img_aside
@@ -246,8 +315,14 @@ aside
 .description
 {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
 }
+
+.étoile
+{
+    margin-top: 35px;
+}
+
 
 /* Activitées */
 
@@ -260,19 +335,28 @@ aside
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
     border-radius: 8px;
     margin-right: 20px;
 }
 
 .grande_carte
-{
+{   
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 8px;
     margin-right: 20px;
+    box-shadow: 3px 3px 5px #f2f2f2;
+    padding-bottom: 10px; 
+}
+
+.petite_carte
+{
+    box-shadow: 3px 3px 5px #f2f2f2;
+    padding-bottom: 10px; 
+    border-radius: 8px; 
 }
 
 .grande_photo
@@ -290,16 +374,16 @@ aside
     height: 125px;
     object-fit: cover;
     border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    
+    border-top-right-radius: 6px;   
 }
+
+
  /* Footer */
 
  footer
  {
     display:flex;
-    justify-content: space-around;
-    padding-left: 0px;
+    justify-content:space-between;
     background-color: #f2f2f2;
     margin-top: 50px;
  }
