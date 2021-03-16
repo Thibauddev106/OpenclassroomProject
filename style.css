@@ -72,6 +72,11 @@ nav li
     text-decoration : None
 }
 
+.lien_menu
+{
+    font-size: 12px;
+    text-decoration: None;
+}
 
  /* Section recherche */ 
 
@@ -88,10 +93,10 @@ nav li
  }
  #champ_recherche
  {
-     height: 30px;
-     border: 2px solid #f2f2f2;
-     margin-left: -5px;
-     margin-top: 10px;
+    height: 30px;
+    border: 2px solid #f2f2f2;
+    margin-left: -5px;
+    margin-top: 10px;
  }
 .rechercher
 {
@@ -391,4 +396,52 @@ aside
  ul
  {
      list-style-type: none;
+ }
+
+
+ /* media queries */
+
+ @media screen and (max-width: 1015px)
+ {
+    body
+    {
+     width: auto;   
+    }
+
+        
+   #article_aside
+    {
+        flex-direction: column-reverse;
+    }
+
+    #hebergement
+    {
+        flex-direction: column;
+    }
+
+    aside
+    {
+        width: 100%;   
+    }
+    
+    #activités
+    {
+        flex-direction: column;
+    }
+
+    .img_article
+    {
+        width: 100%;
+    }
+
+    .grande_photo
+    {
+        width: 100%;
+        height: 125px;
+    }
+
+    .petite_photo
+    {
+        width: 100%;
+    }
  }
