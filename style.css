@@ -53,6 +53,7 @@ header
     justify-content: space-between;    
 }
 
+
 /* Navigaton */
 
 nav ul
@@ -77,6 +78,7 @@ nav li
     font-size: 12px;
     text-decoration: None;
 }
+
 
  /* Section recherche */ 
 
@@ -407,8 +409,7 @@ aside
     {
      width: auto;   
     }
-
-        
+   
    #article_aside
     {
         flex-direction: column-reverse;
