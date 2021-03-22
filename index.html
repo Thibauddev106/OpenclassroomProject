@@ -9,19 +9,24 @@
     
     <body>
          
-        <header>
-                <img src="images/logo/Reservia@3x.png" alt="Logo" id="logo"/>
-                <nav>
-                    <ul id="Menu">
-                        <li><a class="lien_menu" href="#ancre_hébergement">Hébergements</a></li>
-                        <li><a class="lien_menu" href="#ancre_activités">Activités</a></li>
-                        <li><a class="non_souligné" href="inscription.html">S'inscrire</a></li>
-                    </ul>
-                </nav>  
-        </header>
+        <div id="main">
+            <!-- Header -->
+            <header class="flex">
+                <div class="logo">
+                    <img src="images/logo/Reservia.svg" alt="Reservia">
+                </div>
     
+                <!-- Navigation -->
+                <nav class="flex">      
+                    <ul class="flex">
+                        <li><a href="#hebergement">Hébergements</a></li>
+                        <li><a href="#activities">Activités</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="signUp">S'inscrire</a>
+            </header>
         
-<!--section recherche-->
+<!--section recherche--></a>
 
         <div id="titre_principal">       
             <h2>Trouver votre hébergement pour des vacances de rêve</h2>
@@ -71,22 +76,24 @@
 <!--section hébergement-->
 
         <section>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="info">
+            <div class="icone"><i class="fas fa-info"></i></div>
+            <p class="text">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
             <div id="article_aside">
                 <article>
                     <h2 class="titres" id="ancre_hébergement">Hébergements à Marseille</h2>
                     <div id="hebergement">
                         <div class="agencement">
                             <a href="#"><img class="img_article" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"></a>
-                            
                                 <h4>Auberge la Cannebière</h4>
                                 <p>Nuit à partir de 25€</p>
-                                <span>
+                                <span class="star">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star non_rempli"></i>
                                 </span>
                             
                         </div> 
@@ -95,7 +102,7 @@
                             <a href="#"><img class="img_article" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"></a>
                             <h4>Hôtel du port</h4>
                             <p>Nuit à partir de 52€</p>
-                            <span>
+                            <span c>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -108,12 +115,12 @@
                             <a href="#"><img class="img_article" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"></a>
                             <h4>Hôtel les mouettes</h4>
                             <p>Nuit à partir de 76€</p>
-                            <span>
+                            <span class="star">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star non_rempli"></i>
                             </span>
                         </div>
                         <div class="agencement">
@@ -121,12 +128,12 @@
                             <a href="#"><img class="img_article" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"></a>    
                             <h4>Hôtel de la mer</h4>
                             <p>Nuit à partir de 46€</p>
-                            <span>
+                            <span class="star">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star non_rempli"></i>
+                                <i class="fas fa-star non_rempli"></i>
                             </span>
                         </div>
                         <div class="agencement">
@@ -134,12 +141,12 @@
                             <a href="#"><img class="img_article" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier"></a>
                             <h4>Auberge le panier</h4>
                             <p>Nuit à partir de 23€</p>
-                            <span>
+                            <span class="star">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star non_rempli"></i>
                             </span>
                         </div>
                         <div class="agencement">
@@ -156,7 +163,7 @@
                             </span>
                         </div>
                     </div>
-                    <a class="non_souligné" href="#">Afficher plus</a>
+                    <a  href="#"><p>Afficher plus</p></a>
                 </article>
 
                 <aside>
@@ -188,7 +195,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star non_rempli"></i>
                             </span>
                         </div>
                     </div>
@@ -202,7 +209,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star non_rempli"></i>
                             </span>
                         </div> 
                     </div>
