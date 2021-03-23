@@ -44,12 +44,6 @@ p
 
 /* Header */
 
-
-#main
-{
-    margin-right:  50px;
-}
-
 ul
 {
     list-style-type: none;
@@ -66,6 +60,7 @@ a
 .flex
 {
     display: flex;
+    
 }
 
 
@@ -84,6 +79,7 @@ header
 nav li
 {
     padding-top: 40px;
+    font-size: 12px;
 }
 
 nav a
@@ -91,13 +87,16 @@ nav a
     padding: 40px 30px 0;
 }
 
-.signUp{
+.signUp
+{
     color: #0065FC;
     font-weight: 700;
-    padding: 40px 40px 0;
+    padding: 40px 0 0;
+    font-size: 12px;
 }
 
-nav li a:hover{
+nav li a:hover
+{
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 38px;
@@ -114,11 +113,6 @@ nav li a:hover{
     border:3px solid white;
  }
 
- #span_recherche
- {
-    display: inline;
-
- }
  #champ_recherche
  {
     height: 30px;
@@ -197,7 +191,8 @@ nav li a:hover{
     border: 2px solid #DEEBFF;
     color: #0065FC;
     margin: -3px;
-    padding: 7px; 
+    padding: 7px;
+     
 }
 
 .btn 
@@ -224,8 +219,9 @@ nav li a:hover{
 
 .fa-map-marker-alt
 {
-    padding-top: 3.5px;
-    padding-bottom: 6.5px;
+    margin-top: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     padding-left: 5px;
     padding-right: 5px;
     border: 2px solid #f2f2f2;
@@ -233,7 +229,10 @@ nav li a:hover{
     border-bottom-left-radius: 8px;
     border-right: none;
     background-color: #f2f2f2;
+    font-size: 12px;
+    
 }
+
 
 
  /* section hébergement*/
@@ -248,6 +247,7 @@ nav li a:hover{
     display: flex;
     align-items: center;
     
+    
 }
 .icone
 {
@@ -261,6 +261,7 @@ nav li a:hover{
     align-items: center;
     justify-content: center;
     margin-right: 8px; 
+    font-size: 12px;
 }
 
 .fa-info
@@ -317,7 +318,6 @@ nav li a:hover{
 #article_aside
 {
     display: flex;
-    
     margin-bottom: 30px;
 }
 
@@ -391,6 +391,12 @@ aside
     margin-top: 35px;
 }
 
+a p
+{
+    font-weight: 700;
+    margin-left: 10px;
+}
+
 
 /* Activitées */
 
@@ -454,9 +460,21 @@ aside
     justify-content:space-between;
     background-color: #f2f2f2;
     margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 80px;
  }
+footer li
+{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
 
- ul
+footer a:hover{
+    font-weight: 600;
+    color: #0065FC;
+}
+footer ul
  {
      list-style-type: none;
  }
@@ -472,22 +490,28 @@ aside
 
  @media screen and (max-width: 960px)
  {
-     /* hébergement*/
-    #hebergement
+    
+    
+    body
     {
-        
-    }
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    } 
+    
+    
+    
+ /* hébergement*/
 
     article
     {
         width: fit-content;
     }
+
     #article_aside
     {
         display: flex;
-        flex-direction: column-reverse;
-        
-                
+        flex-direction: column-reverse;       
     }
 
     /* les plus populaires */
@@ -522,23 +546,84 @@ aside
     {
         width: 100%;
     }
+
+    /*footer*/
+
+    footer
+    {
+        width: auto;
+    }
  }
 
- @media screen and (max-width: 750px)
+ @media screen and (max-width: 770px)
  {
-     /* hébergement*/
+     /*header*/
+
+     header
+     {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .signUp
+    {
+        align-self: flex-end;
+        padding: 0;
+        margin-right: 20px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    nav
+    {
+        order:3;
+    }
+    
+    nav ul
+    {
+        width: 100%;
+    }
+
+    nav li
+    {
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    nav li a
+    {
+        padding: inherit;
+    }
+
+    nav li a:hover
+    {
+        border-top: none;
+    }
+
+    nav li:hover
+    {
+        border-bottom-color:#0065FC;
+    }
+
+    /*filtres*/
+
+    .filtres
+    {
+        flex-direction: column;
+    }
+    /* hébergement*/
 
     #hebergement
     {
         flex-direction: column;
-        
+        width: 370px;
     }
  
     article
     {
-        width: fit-content;
         padding-right: 10px;
-
     }
     .img_article
     {
@@ -549,7 +634,7 @@ aside
     
     aside
     {
-        width:fit-content;
+        width: 370px;
     }
 
     .agencement_aside
@@ -563,7 +648,8 @@ aside
     #activités
     {
         flex-direction: column;
-        width: 70%;
+        width: 390px;
+        margin-left: 10px;
     }
     
     .grande_photo
@@ -577,5 +663,12 @@ aside
         width: 100%;
     }
 
-    
+    /*footer*/
+
+    footer
+    {
+        flex-direction: column;
+        width: fit-content;
+        
+    }    
  }
