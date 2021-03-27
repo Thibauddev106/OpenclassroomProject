@@ -556,15 +556,30 @@ footer ul
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
-        width: auto; 
+        width: auto;
+         
     }
 
-    .article:nth-child(4)
+    .colonne:nth-child(4)
     {
-        background-color: red;
+        flex-direction: row;
+        margin-top: 20px;
     }
 
+    .petite_carte
+    {
+        margin-right: 20px;
+    }
         
+    .grande_carte
+    {
+        margin-right: 20px;
+        
+    }
+    .colonne
+    {
+       margin-right: 0;
+    }
 /*footer*/
 
 footer
@@ -640,10 +655,10 @@ footer
         width: 100%;
     }
  
-   /* article
+    article
     {
         padding-right: 10px;
-    }*/
+    }
 
     .img_article
     {
@@ -670,6 +685,7 @@ footer
         flex-direction: column;
         width: 100%px;
         margin-left: 10px;
+        
         
         
     }
