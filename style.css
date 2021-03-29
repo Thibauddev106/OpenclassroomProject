@@ -11,7 +11,6 @@ body
 {
     font-family:Raleway ,Arial, Helvetica, sans-serif;
     width: 900px;
-     
 }
 
 h2
@@ -32,7 +31,6 @@ h4
     margin-top: 5px;
     margin-bottom: 0;
 }
-
 
 p 
 {
@@ -60,8 +58,6 @@ a
 .flex
 {
     display: flex;
-    
-    
 }
 
 
@@ -69,15 +65,12 @@ header
 {
     justify-content: space-between;
     margin-bottom: 20px;
-    
-
 }
 
 .logo
 {
     flex: 1;
-    margin-left: 10px;
-    
+    margin-left: 10px;   
 }
 
 nav li
@@ -107,8 +100,6 @@ nav li a:hover
 }
   
 
-
-
  /* Section recherche */ 
 
 #titre_principal
@@ -124,6 +115,7 @@ nav li a:hover
     margin-left: -5px;
     margin-top: 10px;
 }
+
 .rechercher
 {
     background-color: #0065FC;
@@ -144,13 +136,14 @@ nav li a:hover
 
 .button
 {
-    
     border: solid 2px #f2f2f2;
     border-radius: 20px;
     background-color: white;
     height: 30px;
     padding-left: 30px;    
 }
+
+
 
 #recherche_filtre
 {
@@ -193,7 +186,6 @@ nav li a:hover
 
 .btn i 
 {
-    
     background-color: #DEEBFF;
     border-radius: inherit;
     width: 13px;
@@ -202,7 +194,6 @@ nav li a:hover
     color: #0065FC;
     margin: -3px;
     padding: 7px;
-    
 }
 
 .btn 
@@ -240,8 +231,8 @@ nav li a:hover
     border-right: none;
     background-color: #f2f2f2;
     font-size: 12px;
-    
 }
+
 
 /* section hébergement*/
 
@@ -256,6 +247,7 @@ nav li a:hover
     align-items: center;
     margin-left: 10px;  
 }
+
 .icone
 {
     height: 10px;
@@ -299,8 +291,7 @@ nav li a:hover
 {
     display: flex;
     flex-direction: column;
-    padding-bottom: 5px;
-    
+    padding-bottom: 5px;    
 }
 
 .fa-star
@@ -390,7 +381,6 @@ aside
 {
     display: flex;
     flex-direction: column;
-    
 }
 
 .étoile
@@ -413,6 +403,7 @@ a p
     background-color: white;
     border: white;
 }
+
 #activités
 {
     display: flex;
@@ -510,24 +501,23 @@ footer ul
         width: 100%;
         justify-content: center;
     }
+
     article
     {
-        
-         width: auto;
-         
+         width: auto;    
     }
 
     .agencement
     {
-        width: auto;
-        
+        width: auto; 
     }
+
     #article_aside
     {
         display: flex;
         flex-direction: column-reverse;
-        
     }
+
 
 /* les plus populaires */
 
@@ -535,6 +525,7 @@ footer ul
     {
         width: auto;
     }
+
     aside
     {
         min-width: auto;
@@ -544,9 +535,7 @@ footer ul
     .agencement_aside
     {
         width: 30%;
-        display:inline-flex;
-        
-        
+        display:inline-flex;  
     }
 
 /* activités */
@@ -556,8 +545,7 @@ footer ul
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
-        width: auto;
-         
+        width: auto;  
     }
 
     .colonne:nth-child(4)
@@ -573,13 +561,14 @@ footer ul
         
     .grande_carte
     {
-        margin-right: 20px;
-        
+        margin-right: 20px; 
     }
     .colonne
     {
        margin-right: 0;
     }
+
+
 /*footer*/
 
 footer
@@ -587,6 +576,7 @@ footer
         width: auto;
     }
 }
+
 
  @media screen and (max-width: 797px)
  {
@@ -640,12 +630,16 @@ footer
         border-bottom-color:#0065FC;
     }
 
+   
+
+
 /*filtres*/
 
     .filtres
     {
         flex-direction: column;
     }
+
 
 /* hébergement*/
 
@@ -684,10 +678,7 @@ footer
     {
         flex-direction: column;
         width: 100%px;
-        margin-left: 10px;
-        
-        
-        
+        margin-left: 10px;   
     }
     
     .grande_photo
