@@ -558,28 +558,23 @@ footer ul
         width: 100%;
         justify-content: center;
     }
-
     article
     {
          width: auto;    
     }
-
     .agencement
     {
         width: auto; 
     } 
-
     .titre_aside
     {
         width: auto;
     }
-
     aside
     {
         
         width: auto;
     }
-
     #titre_activités
     {
         width: auto;
