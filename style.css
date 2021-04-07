@@ -10,9 +10,18 @@
 body
 {
     font-family:Raleway ,Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+
+}
+
+.container
+{
+    max-width: 1200px;
+    /*box-sizing: border-box;*/
+    margin:auto;
+    /*display: flex;
+    flex-direction: column;*/
     
+      
 }
 
 h1
@@ -66,6 +75,7 @@ a
 {
     display: flex;
     margin-right: 0;
+    
 }
 
 
@@ -178,10 +188,6 @@ nav li a:hover
     margin-bottom: 15px;
 }
 
-
-
-
-
 #recherche_filtre
 {
     margin-left: 10px;
@@ -275,7 +281,7 @@ nav li a:hover
 
 .titres
 {
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .info
@@ -307,25 +313,28 @@ nav li a:hover
 
 #hebergement
 {
-    /*width: 600px;*/
     width: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
            
 }
 
+
 .agencement
 {
-    width: auto;
     background-color: white;
     display: flex;
     flex-direction: column; 
+    justify-content: center;
     margin-left: 10px;
+    margin-right: 10px;
     border:3px solid white;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 1px 1px 5px grey;
-       
+    
 }
 
 .carte_description
@@ -355,7 +364,9 @@ nav li a:hover
 #article_aside
 {
     display: flex;
+    justify-content: center;
     margin-bottom: 30px;
+    
     
     
 }
@@ -366,8 +377,10 @@ article
     background-color: #f2f2f2;
     border: solid 3px #f2f2f2;
     border-radius: 8px;
-    margin-left: 10px;
+    margin-left: 20px;
     padding-bottom: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
  .text_carte
  {
@@ -379,18 +392,18 @@ article
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 aside
 {
     background-color:  #f2f2f2;
     border-radius: 8px;
-    min-width: 270px;
+    min-width: 350px;
     margin-bottom: 0px;
     margin-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
     
     
 }
@@ -399,8 +412,8 @@ aside
 {
     background-color: white;
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 1px 1px 5px grey; 
@@ -533,6 +546,7 @@ footer
     padding-left: 10px;
     padding-right: 80px;
     margin-left: 0px;
+    padding-bottom: 30px;
 }
 footer li
 {
