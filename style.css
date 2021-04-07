@@ -282,6 +282,7 @@ nav li a:hover
 .titres
 {
     padding-left: 10px;
+    
 }
 
 .info
@@ -317,7 +318,7 @@ nav li a:hover
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    max-width: 800px;
            
 }
 
@@ -400,11 +401,11 @@ aside
 {
     background-color:  #f2f2f2;
     border-radius: 8px;
-    min-width: 350px;
+    min-width: 300px;
     margin-bottom: 0px;
     margin-top: 10px;
     margin-left: 20px;
-    
+    /*width: auto;*/
     
 }
 
@@ -542,7 +543,7 @@ footer
     justify-content:space-between;
     background-color: #f2f2f2;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     padding-left: 10px;
     padding-right: 80px;
     margin-left: 0px;
@@ -565,47 +566,9 @@ footer ul
 }
 
 
-/* media queries */
 
-/*@media screen and (max-width: 1350px)
-{
-    body
-    {
-        width: auto;
-    } 
-    #hebergement
-    {
-        width: 100%;
-        justify-content: center;
-    }
-    article
-    {
-         width: auto;    
-    }
-    .agencement
-    {
-        width: auto; 
-    } 
-    .titre_aside
-    {
-        width: auto;
-    }
-    aside
-    {
-        
-        width: auto;
-    }
-    #titre_activités
-    {
-        width: auto;
-    }
-    #activités
-    {
-        width: auto;
-    }
-}*/
 
-@media screen and (max-width: 960px)
+@media screen and (max-width: 1000px)
 {   
     body
     {
@@ -651,8 +614,9 @@ footer ul
 
     .agencement_aside
     {
-        width: 30%;
-        display:inline-flex;  
+        padding-right: 25px;
+        display:inline-flex; 
+         
     }
 
 /* activités */
@@ -673,11 +637,13 @@ footer ul
     .petite_carte
     {
         margin-right: 20px;
+        margin-bottom: 20px;
     }
         
     .grande_carte
     {
-        margin-right: 20px; 
+        margin-right: 20px;
+        margin-bottom: 20px; 
     }
     .colonne
     {
