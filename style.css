@@ -462,6 +462,11 @@ a p
     width: auto;
 }
 
+.titreActivites
+{
+    margin-left: 10px;
+}
+
 #activites
 {
     display: flex;
@@ -604,7 +609,7 @@ footer ul
     {
         padding-right: 25px;
         display:inline-flex; 
-         
+        margin-right: 0; 
     }
 
 /* activités */
@@ -648,7 +653,7 @@ footer
 }
 
 
- @media screen and (max-width: 797px)
+ @media screen and (max-width: 820px)
  {
 /*header*/
 
@@ -740,6 +745,7 @@ footer
         padding-right: 10px;
         background-color: white;
         border: 0;
+        margin-left: 10px;
     }
 
     .img_article
@@ -754,6 +760,7 @@ footer
         width: auto;
         background-color:  #f2f2f2;
         border-radius: 0px;
+        
     }
 
     .agencement_aside
@@ -761,13 +768,14 @@ footer
         display: flex;
         width: auto;
         margin-bottom: 10px;
+        margin-right: 20px;
     }
 
 /* activités */
 
     #titre_activites
     {
-        margin-right: auto;
+        margin-right: 10px;
     }
     #activites
     {
