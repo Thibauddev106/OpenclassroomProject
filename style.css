@@ -22,31 +22,31 @@ body
 
 h1
 {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 h2
 {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 h3
 {
-    font-size: 15px;
+    font-size: 16px;
     margin-right: 10px;
 }
 
 h4
 {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 5px;
     margin-bottom: 0;
 }
 
 p 
 {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 4px;
     margin-bottom: 0;
 }
@@ -92,7 +92,7 @@ header
 nav li
 {
     padding-top: 20px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 nav a
@@ -105,8 +105,9 @@ nav a
     color: #0065FC;
     font-weight: 700;
     padding: 20px 0 0;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 10px;
+    margin-left: 20px;
     
 }
 
