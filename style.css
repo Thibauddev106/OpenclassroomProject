@@ -17,7 +17,7 @@ body
 {
     max-width: 1200px;
     margin:auto;
-    padding: 0, 15%;    
+       
 }
 
 h1
@@ -229,7 +229,6 @@ nav li a:hover
     border-radius: inherit;
     width: 13px;
     text-align: center;
-    border: 2px solid  #DEEBFF ;
     color: #0065FC;
     margin: -3px;
     padding: 7px;
@@ -619,15 +618,10 @@ footer ul
     {
         display: flex;
         flex-wrap: wrap;
-        /*justify-content:center;*/
         width: 100%;  
     }
 
-    /*.colonne:nth-child(4)
-    {
-        flex-direction: row;
-    }*/
-
+    
     .petite_carte
     {
         margin-right: 20px;
